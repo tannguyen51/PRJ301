@@ -12,19 +12,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%  for (int i = 2; i < 10; i++) {
-        %>
-        Cuu CHuong : <%=i%> <br/>
+       <%! int a = 9; %>
         <%
-            for (int j = 1; j <= 10; j++) {
+            double b;
+            b = Math.sqrt(a);
         %>
-        <%=i%> * <%=j%> = <%=(i * j)%> <br/>
-        <%
-
-                }
-
-            }
-        %>
+        Kết quả: sqrt(<%=a%>) = <span style="color: red"> <%=b%> </span>;
 
     </body>  
 
