@@ -29,4 +29,3 @@ INSERT INTO tblBooks (BookID, Title, Author, PublishYear, Price, Quantity) VALUE
 ('B0008', 'Những Ngã Tư Và Những Cột Đèn', 'Trần Đăng Khoa', 1968, 50000, 9),
 ('B0009', 'Bên Kia Bờ Hy Vọng', 'Nguyễn Ngọc Thuần', 2005, 80000, 6),
 ('B0010', 'Mắt Biếc', 'Nguyễn Nhật Ánh', 1990, 95000, 25);
-
