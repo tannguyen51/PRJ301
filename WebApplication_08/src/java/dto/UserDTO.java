@@ -17,20 +17,11 @@ package dto;
  * @author tungi
  */
 public class UserDTO {
-
     private String userID;
     private String fullName;
     private String roleId;
     private String password;
-
     public UserDTO() {
-    }
-
-    public UserDTO(String userID, String fullName, String roleId, String password) {
-        this.userID = userID;
-        this.fullName = fullName;
-        this.roleId = roleId;
-        this.password = password;
     }
 
     public String getUserID() {
@@ -53,8 +44,8 @@ public class UserDTO {
         return roleId;
     }
 
-    public void setRoleId(String roleId) {
-        this.roleId = roleId;
+    public void setRoleId(String roleID) {
+        this.roleId = roleID;
     }
 
     public String getPassword() {
@@ -65,9 +56,11 @@ public class UserDTO {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "UserDTO{" + "userID=" + userID + ", fullName=" + fullName + ", roleId=" + roleId + ", password=" + password + '}';
+    public UserDTO(String userID, String fullName, String roleId, String password) {
+        this.userID = userID;
+        this.fullName = fullName;
+        this.roleId = roleId;
+        this.password = password;
     }
-
+    
 }
